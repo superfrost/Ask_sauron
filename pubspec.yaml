@@ -1,0 +1,47 @@
+name: fate_ball
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  assets_audio_player: ^3.0.3+2
+  # flutter_sound: ^8.0.0+6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.9.0"
+  flutter_native_splash: ^1.1.5+1
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/icon.png"
+  # flutter pub run flutter_launcher_icons:main
+
+flutter_native_splash:
+  color: "#000000"
+  image: assets/images/sauron_splash.png
+  color_dark: "#000000"
+  # image_dark: assets/splash-invert.png
+  # android: true
+  ios: false
+  web: false
+  # flutter pub run flutter_native_splash:create
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/sounds/
+  fonts:
+    - family: Ringbearer
+      fonts:
+        - asset: assets/fonts/RingbearerMedium-Regular.ttf
